@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <style>
+    /* Reset default margin and padding */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('background.jpg');
+    }
+    
+    /* Navigation bar */
+    .navbar {
+    background-color: #067848;
+    color: white;
+    padding: 10px 0;
+  }
+
+  .navbar .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .navbar {
+    background-color: #067848;
+    color: white;
+    padding: 10px 0;
+  }
+
+  .search-bar {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+    /* Hero section */
+    .hero {
+      background-image: url('hero-background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+    
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    .hero p {
+      font-size: 18px;
+    }
+    
+    /* Featured content */
+    .featured-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 0;
+    }
+    
+    .featured-box {
+      flex-basis: calc(33.33% - 40px);
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    
+    /* Footer */
+    .footer {
+      background-color: #067848;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+ .search-bar-container {
+      display: flex;
+      align-items: center;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    .navbar a:first-child {
+    margin-right: 20px; /* Adjust the value to move it further right */
+  }
+
+  .search-bar {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <script type="module" src="localStorage.js"></script>
+  <div class="navbar">
+    <div class="container">
+      <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <input type="text" class="search-bar" placeholder="Search">
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero">
+    <div class="container">
+      <h1>Welcome to our website</h1>
+      <p>Your source for inspiration and motivation</p>
+    </div>
+  </div>
+  
+  <div class="featured-container">
+    <div class="featured-box">
+      <h2>Quote of the Day</h2>
+      <p>Stay motivated with our daily quotes.</p>
+    </div>
+    <div class="featured-box">
+      <h2>Inspirational Stories</h2>
+      <p>Read stories of people who overcame challenges.</p>
+    </div>
+    <div class="featured-box">
+      <h2>Success Tips</h2>
+      <p>Learn strategies for achieving your goals.</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="container">
+      &copy; 2023 Syntax Squad. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
